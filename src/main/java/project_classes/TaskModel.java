@@ -1,5 +1,5 @@
 package project_classes;
 
-public class Task {
+public class TaskModel {
 
 }
