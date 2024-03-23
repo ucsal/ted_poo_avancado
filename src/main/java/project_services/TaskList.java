@@ -11,12 +11,16 @@ import project_interfaces.Task;
 
 public class TaskList {
 
+    @SuppressWarnings({ "rawtypes", "unchecked" })
     List<Task> mainList = new ArrayList();
 
+    @SuppressWarnings({ "rawtypes", "unchecked" })
     List<Task> startedList = new ArrayList();
 
+    @SuppressWarnings({ "rawtypes", "unchecked" })
     List<Task> doneList = new ArrayList();
 
+    @SuppressWarnings({ "rawtypes", "unchecked" })
     List<Task> deletedList = new ArrayList();
 
     public void done(Task task) {
