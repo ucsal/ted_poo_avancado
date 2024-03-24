@@ -71,10 +71,10 @@ public class TaskList {
 
         list.addAll(mainList);
 
-        if (!ignoreFields.contains("")) {
+        if (!ignoreFields.contains("isDone")) {
             list.addAll(doneList);
         }
-        if (!ignoreFields.contains("")) {
+        if (!ignoreFields.contains("isDelete")) {
             list.addAll(deletedList);
         }
         return list;
