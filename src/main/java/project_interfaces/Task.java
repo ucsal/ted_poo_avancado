@@ -27,9 +27,9 @@ public interface Task {
     void setDescription(String description);
 
     // Getter e Setter para status
-    Boolean getStatus();
+    int getStatus();
 
-    void setStatus(Boolean status);
+    void setStatus(int status);
 
     // Getter e Setter para priority
     int getPriority();

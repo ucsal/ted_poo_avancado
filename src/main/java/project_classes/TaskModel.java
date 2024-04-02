@@ -9,13 +9,45 @@ public class TaskModel implements Task {
     private String title;
     private String tag;
     private String description;
-    private Boolean status;
+    private int status;
     private int priority;
     private Boolean isDelete;
     private Boolean isDone;
     private String typeTask;
 
-    // Getters e Setters para userID
+    public TaskModel() {
+		this.status = 1;
+		this.priority = 0;
+		this.isDelete = false;
+		this.isDone = false;
+	}
+
+    public TaskModel(Integer userID, String title, String tag, String description, String typeTask) {
+		this.userID = userID;
+		this.title = title;
+		this.tag = tag;
+		this.description = description;
+		this.status = 1;
+		this.priority = 0;
+		this.isDelete = false;
+		this.isDone = false;
+		this.typeTask = typeTask;
+	}
+
+    public TaskModel(Integer userID, String title, String tag, String description, String typeTask, String userUuid) {
+		this.userID = userID;
+		this.userUuid = userUuid;
+		this.title = title;
+		this.tag = tag;
+		this.description = description;
+		this.status = 1;
+		this.priority = 0;
+		this.isDelete = false;
+		this.isDone = false;
+		this.typeTask = typeTask;
+	}
+
+	// Getters e Setters para userID
     public Integer getUserID() {
         return userID;
     }
@@ -61,11 +93,11 @@ public class TaskModel implements Task {
     }
 
     // Getters e Setters para status
-    public Boolean getStatus() {
+    public int getStatus() {
         return status;
     }
 
-    public void setStatus(Boolean status) {
+    public void setStatus(int status) {
         this.status = status;
     }
 
